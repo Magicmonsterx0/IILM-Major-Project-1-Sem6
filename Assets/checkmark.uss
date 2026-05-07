@@ -1,0 +1,7 @@
+:root {
+}
+
+.unity-toggle__checkmar {
+    width: 35px;
+    height: 35px;
+}

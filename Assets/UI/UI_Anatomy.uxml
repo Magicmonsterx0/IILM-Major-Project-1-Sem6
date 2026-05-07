@@ -1,17 +1,20 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
     <Style src="project://database/Assets/buttonstyle.uss?fileID=7433441132597879392&amp;guid=a9c439a5925485e4ca7e9b623c4e774e&amp;type=3#buttonstyle"/>
+    <Style src="project://database/Assets/checkmark.uss?fileID=7433441132597879392&amp;guid=09b5b85ada9b44043adc9eb736d91af9&amp;type=3#checkmark"/>
     <ui:VisualElement name="MainRoot" style="flex-grow: 1; flex-direction: row; width: 100%; height: 100%; justify-content: space-between; padding-top: 25px; padding-right: 100px; padding-bottom: 25px; padding-left: 100px; margin-top: 0;">
         <ui:VisualElement name="LeftPanel_Layers" style="flex-grow: 0; width: 800px; height: 100%; background-color: rgb(34, 34, 34); border-top-left-radius: 15px; border-top-right-radius: 15px; border-bottom-right-radius: 15px; border-bottom-left-radius: 15px; padding-top: 15px; padding-right: 15px; padding-bottom: 15px; padding-left: 15px; margin-top: 0;">
             <ui:Label tabindex="-1" text="BIOLOGICAL LAYERS" parse-escape-sequences="true" display-tooltip-when-elided="true" name="BIOLOGICAL_LAYERS" style="-unity-text-align: middle-center; -unity-font-style: bold; color: rgb(255, 255, 255);"/>
-            <ui:Toggle label="Skeletal System" name="Toggle_Skeleton" style="color: rgb(255, 255, 255); -unity-text-align: middle-center; height: 48px; aspect-ratio: auto; width: 624px;"/>
-            <ui:Toggle label="Muscular Insertions Layer" name="Toggle_MuscularInsertions" style="color: rgb(255, 255, 255); -unity-text-align: middle-center;"/>
-            <ui:Toggle label="Joints&#10;" name="Toggle_Joints" style="color: rgb(255, 255, 255); -unity-text-align: middle-center;"/>
-            <ui:Toggle label="Muscular System" name="Toggle_Muscular" style="color: rgb(255, 255, 255); -unity-text-align: middle-center;"/>
-            <ui:Toggle label="Cardiovascular System" name="Toggle_Cardiovascular" style="color: rgb(255, 255, 255); -unity-text-align: middle-center;"/>
-            <ui:Toggle label="Nervous System" name="Toggle_Nervous" style="color: rgb(255, 255, 255); -unity-text-align: middle-center;"/>
-            <ui:Toggle label="Lymphoid Organs&#10;" name="Toggle_Lymphoid" style="color: rgb(255, 255, 255); -unity-text-align: middle-center;"/>
-            <ui:Toggle label="Visceral System" name="Toggle_Visceral" style="color: rgb(255, 255, 255); -unity-text-align: middle-center;"/>
-            <ui:Toggle label="Human Body" name="Toggle_Body" style="color: rgb(255, 255, 255); -unity-text-align: middle-center;"/>
+            <ui:VisualElement style="flex-grow: 1; align-items: stretch; align-self: auto; justify-content: flex-start; font-size: 30px; -unity-font-style: normal; padding-left: 50px; white-space: nowrap;">
+                <ui:Toggle label="Skeletal System" name="Toggle_Skeleton" style="color: rgb(255, 255, 255); -unity-text-align: middle-center; height: 43px; aspect-ratio: auto; width: 703px;"/>
+                <ui:Toggle label="Muscular Insertions Layer" name="Toggle_MuscularInsertions" style="color: rgb(255, 255, 255); -unity-text-align: middle-center;"/>
+                <ui:Toggle label="Joints&#10;" name="Toggle_Joints" style="color: rgb(255, 255, 255); -unity-text-align: middle-center; margin-left: 4px;"/>
+                <ui:Toggle label="Muscular System" name="Toggle_Muscular" style="color: rgb(255, 255, 255); -unity-text-align: middle-center;"/>
+                <ui:Toggle label="Cardiovascular System" name="Toggle_Cardiovascular" style="color: rgb(255, 255, 255); -unity-text-align: middle-center;"/>
+                <ui:Toggle label="Nervous System" name="Toggle_Nervous" style="color: rgb(255, 255, 255); -unity-text-align: middle-center;"/>
+                <ui:Toggle label="Lymphoid Organs&#10;" name="Toggle_Lymphoid" style="color: rgb(255, 255, 255); -unity-text-align: middle-center;"/>
+                <ui:Toggle label="Visceral System" name="Toggle_Visceral" style="color: rgb(255, 255, 255); -unity-text-align: middle-center;"/>
+                <ui:Toggle label="Human Body" name="Toggle_Body" style="color: rgb(255, 255, 255); -unity-text-align: middle-center;"/>
+            </ui:VisualElement>
         </ui:VisualElement>
         <ui:VisualElement name="RightPanel_Tools" style="flex-grow: 0; width: 800px; height: 100%; background-color: rgb(34, 34, 34); border-top-left-radius: 15px; border-top-right-radius: 15px; border-bottom-right-radius: 15px; border-bottom-left-radius: 15px; padding-top: 15px; padding-right: 15px; padding-bottom: 15px; padding-left: 15px;">
             <ui:Label tabindex="-1" text="INTERACTION TOOLS" parse-escape-sequences="true" display-tooltip-when-elided="true" style="-unity-text-align: middle-center; color: rgb(255, 255, 255); -unity-font-style: bold;"/>

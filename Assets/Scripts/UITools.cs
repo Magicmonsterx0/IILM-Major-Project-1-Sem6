@@ -14,7 +14,7 @@ public class UITools : MonoBehaviour
     [Tooltip("Drag the 'DynamicLabel' GameObject from your Hierarchy here!")]
     public GameObject dynamicLabelContainer;
 
-    public List<MagneticBody> allBoneGroups;
+    // We removed the manual "allBoneGroups" list. Unity will handle this automatically now!
 
     // UI Element Trackers
     private Button btnDissect;
@@ -47,7 +47,7 @@ public class UITools : MonoBehaviour
         if (masterTurntable == null) masterTurntable = FindFirstObjectByType<MasterTurntable>();
         if (nomenclatureSystem == null) nomenclatureSystem = FindFirstObjectByType<NomenclatureSystem>();
 
-        if (btnDissect != null) btnDissect.text = isDissectModeOn ? "Ungroup Bones" : "Explode View";
+        if (btnDissect != null) btnDissect.text = isDissectModeOn ? "Ungroup Anatomy" : "Group Anatomy";
         if (btnInspect != null) btnInspect.text = isInspectModeOn ? "Exit Inspect" : "Inspect Mode";
         if (btnLabels != null) btnLabels.text = areLabelsOn ? "Hide Labels" : "Labels";
     }
@@ -64,12 +64,15 @@ public class UITools : MonoBehaviour
     {
         isDissectModeOn = !isDissectModeOn;
 
-        foreach (MagneticBody group in allBoneGroups)
+        // THE FIX: Automatically find EVERY MagneticBody active in the scene (Bones, Veins, Muscles, etc.)
+        MagneticBody[] allBodies = FindObjectsByType<MagneticBody>(FindObjectsInactive.Exclude, FindObjectsSortMode.None);
+
+        foreach (MagneticBody group in allBodies)
         {
             if (group != null) group.SetGroupMode(isDissectModeOn);
         }
 
-        btnDissect.text = isDissectModeOn ? "Ungroup Bones" : "Explode View";
+        btnDissect.text = isDissectModeOn ? "Ungroup Anatomy" : "Group Anatomy";
 
         if (isDissectModeOn && isInspectModeOn) OnInspectClicked();
     }
@@ -98,7 +101,7 @@ public class UITools : MonoBehaviour
             nomenclatureSystem.enabled = areLabelsOn;
         }
 
-        // 2. NEW FIX: Physically hide the floating UI canvases!
+        // 2. Physically hide the floating UI canvases!
         if (dynamicLabelContainer != null)
         {
             dynamicLabelContainer.SetActive(areLabelsOn);
@@ -110,13 +113,12 @@ public class UITools : MonoBehaviour
     private void OnResetClicked()
     {
         // 1. Snap the skeleton back FIRST! 
-        // We do this immediately so the bones are in their correct spots before modes change.
         if (masterTurntable != null)
         {
             masterTurntable.ResetToOrigin();
         }
 
-        // 2. NOW it is safe to turn off the toggles and unfreeze the bones
+        // 2. NOW it is safe to turn off the toggles and unfreeze the anatomy
         if (isDissectModeOn) OnDissectClicked();
         if (isInspectModeOn) OnInspectClicked();
         if (areLabelsOn) OnLabelsClicked();
