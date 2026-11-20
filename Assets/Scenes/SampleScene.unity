@@ -3382,14 +3382,34 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 863512645795027999, guid: bb91fcbcb3cc896468b372b1c762bfab,
         type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 863512645795027999, guid: bb91fcbcb3cc896468b372b1c762bfab,
+        type: 3}
       propertyPath: m_Renderer
       value: 
       objectReference: {fileID: 1971373150}
+    - target: {fileID: 2554827892209798263, guid: bb91fcbcb3cc896468b372b1c762bfab,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4048650986295294844, guid: bb91fcbcb3cc896468b372b1c762bfab,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5964744442239762404, guid: bb91fcbcb3cc896468b372b1c762bfab,
         type: 3}
       propertyPath: m_InteractorSource
       value: 
       objectReference: {fileID: 2442306273464076158}
+    - target: {fileID: 6212858538863823644, guid: bb91fcbcb3cc896468b372b1c762bfab,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6212858538863823644, guid: bb91fcbcb3cc896468b372b1c762bfab,
         type: 3}
       propertyPath: m_Renderer
@@ -5685,6 +5705,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1217970124}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &745004195 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6212858538863823644, guid: bb91fcbcb3cc896468b372b1c762bfab,
+    type: 3}
+  m_PrefabInstance: {fileID: 1806416954}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1410cbaaadf84a7aaa6459d37ad21b3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &783838590
 GameObject:
   m_ObjectHideFlags: 0
@@ -9561,6 +9593,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a00cff961714664a0cb9bc68a41d6f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.UI.XRUIToolkitManager
+--- !u!137 &1526980728 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 7163876590946616089, guid: 27024f5809f4a4347b9cd7f26a1bdf93,
+    type: 3}
+  m_PrefabInstance: {fileID: 1065312417}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1528764483 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 780270278251679399, guid: 27024f5809f4a4347b9cd7f26a1bdf93,
@@ -11873,9 +11911,29 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 863512645795027999, guid: bb91fcbcb3cc896468b372b1c762bfab,
         type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 863512645795027999, guid: bb91fcbcb3cc896468b372b1c762bfab,
+        type: 3}
       propertyPath: m_Renderer
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 2554827892209798263, guid: bb91fcbcb3cc896468b372b1c762bfab,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4048650986295294844, guid: bb91fcbcb3cc896468b372b1c762bfab,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4048650986295294844, guid: bb91fcbcb3cc896468b372b1c762bfab,
+        type: 3}
+      propertyPath: m_MaterialPropertyBlockHelper
+      value: 
+      objectReference: {fileID: 745004195}
     - target: {fileID: 5964744442239762404, guid: bb91fcbcb3cc896468b372b1c762bfab,
         type: 3}
       propertyPath: m_InteractorSource
@@ -11883,9 +11941,14 @@ PrefabInstance:
       objectReference: {fileID: 4808866747133493400}
     - target: {fileID: 6212858538863823644, guid: bb91fcbcb3cc896468b372b1c762bfab,
         type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6212858538863823644, guid: bb91fcbcb3cc896468b372b1c762bfab,
+        type: 3}
       propertyPath: m_Renderer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1526980728}
     - target: {fileID: 6707959385038857591, guid: bb91fcbcb3cc896468b372b1c762bfab,
         type: 3}
       propertyPath: m_InteractorSource
@@ -80074,230 +80137,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2871045283508824223}
   m_Mesh: {fileID: 5512450175283302607, guid: af4d0fa08f2f3294faeaf922f98deb49, type: 3}
---- !u!114 &1689558038565254427
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6598815579480097363}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 18d5c629281874bc18cb5ead1d245f6a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SimulatedHandExpressions:
-  - m_Name: Poke
-    m_ToggleInput:
-      m_InputSourceMode: 2
-      m_InputActionPerformed:
-        m_Name: 
-        m_Type: 0
-        m_ExpectedControlType: 
-        m_Id: aac4fcd2-f835-44f9-ad9e-717f1d0a56a1
-        m_Processors: 
-        m_Interactions: 
-        m_SingletonActionBindings: []
-        m_Flags: 0
-      m_InputActionValue:
-        m_Name: 
-        m_Type: 0
-        m_ExpectedControlType: 
-        m_Id: c11ef2db-7277-4707-a130-c362223114a8
-        m_Processors: 
-        m_Interactions: 
-        m_SingletonActionBindings: []
-        m_Flags: 0
-      m_InputActionReferencePerformed: {fileID: -5976510165261225158, guid: b72ab2a46d9094be38774d023beb4d34,
-        type: 3}
-      m_InputActionReferenceValue: {fileID: -5976510165261225158, guid: b72ab2a46d9094be38774d023beb4d34,
-        type: 3}
-      m_ObjectReferenceObject: {fileID: 0}
-      m_ManualPerformed: 0
-      m_ManualValue: 0
-      m_ManualQueuePerformed: 0
-      m_ManualQueueWasPerformedThisFrame: 0
-      m_ManualQueueWasCompletedThisFrame: 0
-      m_ManualQueueValue: 0
-      m_ManualQueueTargetFrame: 0
-    m_Capture: {fileID: 0}
-    m_IsQuickAction: 0
-  - m_Name: Pinch
-    m_ToggleInput:
-      m_InputSourceMode: 2
-      m_InputActionPerformed:
-        m_Name: 
-        m_Type: 0
-        m_ExpectedControlType: 
-        m_Id: 76db0311-b6ef-41ff-bbaf-1dac59f943dc
-        m_Processors: 
-        m_Interactions: 
-        m_SingletonActionBindings: []
-        m_Flags: 0
-      m_InputActionValue:
-        m_Name: 
-        m_Type: 0
-        m_ExpectedControlType: 
-        m_Id: 86573393-89f5-448d-8c62-8ab352958afd
-        m_Processors: 
-        m_Interactions: 
-        m_SingletonActionBindings: []
-        m_Flags: 0
-      m_InputActionReferencePerformed: {fileID: -8306000708137014372, guid: b72ab2a46d9094be38774d023beb4d34,
-        type: 3}
-      m_InputActionReferenceValue: {fileID: -8306000708137014372, guid: b72ab2a46d9094be38774d023beb4d34,
-        type: 3}
-      m_ObjectReferenceObject: {fileID: 0}
-      m_ManualPerformed: 0
-      m_ManualValue: 0
-      m_ManualQueuePerformed: 0
-      m_ManualQueueWasPerformedThisFrame: 0
-      m_ManualQueueWasCompletedThisFrame: 0
-      m_ManualQueueValue: 0
-      m_ManualQueueTargetFrame: 0
-    m_Capture: {fileID: 0}
-    m_IsQuickAction: 0
-  - m_Name: Grab
-    m_ToggleInput:
-      m_InputSourceMode: 2
-      m_InputActionPerformed:
-        m_Name: 
-        m_Type: 0
-        m_ExpectedControlType: 
-        m_Id: a1f98a06-df3d-4feb-b1da-206a5f661aa8
-        m_Processors: 
-        m_Interactions: 
-        m_SingletonActionBindings: []
-        m_Flags: 0
-      m_InputActionValue:
-        m_Name: 
-        m_Type: 0
-        m_ExpectedControlType: 
-        m_Id: 1713ae4a-66fb-4348-af45-de3be63a5454
-        m_Processors: 
-        m_Interactions: 
-        m_SingletonActionBindings: []
-        m_Flags: 0
-      m_InputActionReferencePerformed: {fileID: -4373459253818063952, guid: b72ab2a46d9094be38774d023beb4d34,
-        type: 3}
-      m_InputActionReferenceValue: {fileID: -4373459253818063952, guid: b72ab2a46d9094be38774d023beb4d34,
-        type: 3}
-      m_ObjectReferenceObject: {fileID: 0}
-      m_ManualPerformed: 0
-      m_ManualValue: 0
-      m_ManualQueuePerformed: 0
-      m_ManualQueueWasPerformedThisFrame: 0
-      m_ManualQueueWasCompletedThisFrame: 0
-      m_ManualQueueValue: 0
-      m_ManualQueueTargetFrame: 0
-    m_Capture: {fileID: 0}
-    m_IsQuickAction: 0
-  - m_Name: Thumb
-    m_ToggleInput:
-      m_InputSourceMode: 2
-      m_InputActionPerformed:
-        m_Name: 
-        m_Type: 0
-        m_ExpectedControlType: 
-        m_Id: 5762c19a-008c-42f8-8f5b-3b36804b8137
-        m_Processors: 
-        m_Interactions: 
-        m_SingletonActionBindings: []
-        m_Flags: 0
-      m_InputActionValue:
-        m_Name: 
-        m_Type: 0
-        m_ExpectedControlType: 
-        m_Id: abe80d9c-1cdb-4099-acb0-77a27f861033
-        m_Processors: 
-        m_Interactions: 
-        m_SingletonActionBindings: []
-        m_Flags: 0
-      m_InputActionReferencePerformed: {fileID: -741559036651486339, guid: b72ab2a46d9094be38774d023beb4d34,
-        type: 3}
-      m_InputActionReferenceValue: {fileID: -741559036651486339, guid: b72ab2a46d9094be38774d023beb4d34,
-        type: 3}
-      m_ObjectReferenceObject: {fileID: 0}
-      m_ManualPerformed: 0
-      m_ManualValue: 0
-      m_ManualQueuePerformed: 0
-      m_ManualQueueWasPerformedThisFrame: 0
-      m_ManualQueueWasCompletedThisFrame: 0
-      m_ManualQueueValue: 0
-      m_ManualQueueTargetFrame: 0
-    m_Capture: {fileID: 0}
-    m_IsQuickAction: 0
-  - m_Name: Open
-    m_ToggleInput:
-      m_InputSourceMode: 2
-      m_InputActionPerformed:
-        m_Name: 
-        m_Type: 0
-        m_ExpectedControlType: 
-        m_Id: 48f4382d-8c5f-4e39-83ef-405d16e851a8
-        m_Processors: 
-        m_Interactions: 
-        m_SingletonActionBindings: []
-        m_Flags: 0
-      m_InputActionValue:
-        m_Name: 
-        m_Type: 0
-        m_ExpectedControlType: 
-        m_Id: 3a364d19-e512-4a45-a31d-ff022b11485f
-        m_Processors: 
-        m_Interactions: 
-        m_SingletonActionBindings: []
-        m_Flags: 0
-      m_InputActionReferencePerformed: {fileID: -9192331390769138535, guid: b72ab2a46d9094be38774d023beb4d34,
-        type: 3}
-      m_InputActionReferenceValue: {fileID: -9192331390769138535, guid: b72ab2a46d9094be38774d023beb4d34,
-        type: 3}
-      m_ObjectReferenceObject: {fileID: 0}
-      m_ManualPerformed: 0
-      m_ManualValue: 0
-      m_ManualQueuePerformed: 0
-      m_ManualQueueWasPerformedThisFrame: 0
-      m_ManualQueueWasCompletedThisFrame: 0
-      m_ManualQueueValue: 0
-      m_ManualQueueTargetFrame: 0
-    m_Capture: {fileID: 0}
-    m_IsQuickAction: 0
-  - m_Name: Fist
-    m_ToggleInput:
-      m_InputSourceMode: 2
-      m_InputActionPerformed:
-        m_Name: 
-        m_Type: 0
-        m_ExpectedControlType: 
-        m_Id: 725934b7-db89-4d01-a944-8760f9586bcd
-        m_Processors: 
-        m_Interactions: 
-        m_SingletonActionBindings: []
-        m_Flags: 0
-      m_InputActionValue:
-        m_Name: 
-        m_Type: 0
-        m_ExpectedControlType: 
-        m_Id: f2556394-ebee-4447-aab9-a0c752530e74
-        m_Processors: 
-        m_Interactions: 
-        m_SingletonActionBindings: []
-        m_Flags: 0
-      m_InputActionReferencePerformed: {fileID: 6469712917552426222, guid: b72ab2a46d9094be38774d023beb4d34,
-        type: 3}
-      m_InputActionReferenceValue: {fileID: 6469712917552426222, guid: b72ab2a46d9094be38774d023beb4d34,
-        type: 3}
-      m_ObjectReferenceObject: {fileID: 0}
-      m_ManualPerformed: 0
-      m_ManualValue: 0
-      m_ManualQueuePerformed: 0
-      m_ManualQueueWasPerformedThisFrame: 0
-      m_ManualQueueWasCompletedThisFrame: 0
-      m_ManualQueueValue: 0
-      m_ManualQueueTargetFrame: 0
-    m_Capture: {fileID: 0}
-    m_IsQuickAction: 0
-  m_RestingHandExpressionCapture: {fileID: 0}
 --- !u!33 &1689987895795614564
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -269132,7 +268971,6 @@ GameObject:
   - component: {fileID: 6598815579480097373}
   - component: {fileID: 6598815579480097372}
   - component: {fileID: 8477477680630164547}
-  - component: {fileID: 1689558038565254427}
   m_Layer: 0
   m_Name: XR Device Simulator
   m_TagString: Untagged
