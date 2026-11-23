@@ -104,6 +104,14 @@ public class MagneticBody : MonoBehaviour
             Renderer rend = child.GetComponent<Renderer>();
             if (rend == null) continue;
 
+            MeshFilter mf = child.GetComponent<MeshFilter>();
+            if (mf != null && mf.sharedMesh != null)
+            {
+                Vector3 size = mf.sharedMesh.bounds.size;
+                if (mf.sharedMesh.vertexCount < 4 || size.x < 0.0001f || size.y < 0.0001f || size.z < 0.0001f)
+                    continue;
+            }
+
             foldedPositions[child] = child.localPosition;
             foldedRotations[child] = child.localRotation;
             isSnapped[child] = true;
@@ -176,11 +184,11 @@ public class MagneticBody : MonoBehaviour
             {
                 // PERFORMANCE FIX: Read from dictionary memory instead of searching for the component!
                 Rigidbody rb = cachedRbs[child];
-                if (rb != null)
+                if (rb != null && !rb.isKinematic)
                 {
-                    rb.isKinematic = true;
                     rb.linearVelocity = Vector3.zero;
                     rb.angularVelocity = Vector3.zero;
+                    rb.isKinematic = true;
                 }
 
                 child.localPosition = Vector3.Lerp(child.localPosition, targetLocalPos, Time.deltaTime * snapSpeed);
