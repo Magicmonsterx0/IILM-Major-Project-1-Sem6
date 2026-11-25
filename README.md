@@ -16,3 +16,4 @@ Before cloning the repository, you must have Git LFS installed on your system.
 2. Open your terminal or command prompt and initialize LFS by running:
    ```bash
    git lfs install
+3. Clone the project normally.
